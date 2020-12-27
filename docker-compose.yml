@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+   node-app:
+        build: ./react-nodejs-example
+        ports:
+           - "3080:3080"
+        volumes:
+           - /react-nodejs-example/api/node_modules
+           - /react-nodejs-example/api:/api/
+
+
